@@ -1,5 +1,5 @@
-/*secretsmanagerid = "Pvrqj2U3R9yS7n_MPXukEg"*/
-serviceaccount_token = "eyJhbGci<SUPRIMIDO>"
+secrets_manager_id = "Pvrqj2U3R9yS7n_MPXukEg"
+serviceaccount_token = "eyJhbGciOiJSUzI<SUPPRESSED>"
 serviceaccount_token_name = "terraformse"
 
 
