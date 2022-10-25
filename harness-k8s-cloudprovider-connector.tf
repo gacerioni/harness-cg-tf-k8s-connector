@@ -7,6 +7,14 @@ resource "harness_encrypted_text" "serviceaccounttoken" {
   name              = var.serviceaccount_token_name
   value             = var.serviceaccount_token
   secret_manager_id = data.harness_secret_manager.secretsmanager.id
+
+    usage_scope {
+    environment_filter_type = "NON_PRODUCTION_ENVIRONMENTS"
+  }
+
+  usage_scope {
+    environment_filter_type = "PRODUCTION_ENVIRONMENTS"
+  }
 }
 
 resource "harness_cloudprovider_kubernetes" "harnesseks" {
